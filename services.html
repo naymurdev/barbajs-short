@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gsap & Barba Tutorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <main
+      data-barba="container"
+      data-barba-namespace="services"
+      class="w-full h-screen bg-white text-black relative grid place-items-center">
+      <header
+        class="flex justify-center p-5 px-8 items-center fixed z-10 top-0 w-full bg-white text-black">
+        <ul
+          class="flex gap-8 headAnime px-12 py-2 font-medium text-xl border-2 border-black rounded-full items-center">
+          <li>
+            <a href="/"> Home </a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="relative w-fit">
+        <img src="./img.jpg" alt="" class="w-96 object-cover" />
+        <h1
+          class="font-semibold text-[12em] absolute top-[52%] left-[50%] translate-x-[-50%] translate-y-[-50%] t z-10 text-white mix-blend-difference leading-[100%] uppercase">
+          services
+        </h1>
+      </div>
+
+      <div
+        class="grid grid-cols-7 image-grid absolute bottom-0 w-full gap-4 h-60"></div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
